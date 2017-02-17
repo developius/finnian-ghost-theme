@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=News+Cycle:400,700');
+
+$black: #424242;
+$grey: #f7f7f7;
+$dark_grey: #686868;
+$orange: #ed950f;
+$white: #fff;
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow-x: hidden;
+	font-family: 'News Cycle', sans-serif;
+	font-size: 18px;
+	background-color: $grey;
+	letter-spacing: 0.8px;
+	margin-bottom: 93px;
+}
+
+.nav {
+	width: 100%;
+	padding: 0;
+	z-index: 1;
+	margin: 0;
+	display: block;
+	background: $orange;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transform: translateY(0);
+	transition: transform .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	text-align: right;
+	text-transform: uppercase;
+	color: $white;
+	ul {
+		margin: 34px;
+		padding-left: 0;
+		li {
+			font-size: 20px;
+			list-style: none;
+			display: inline-block;
+			margin: 0 4px;
+			&:hover {
+				color: $black;
+				background-color: $orange;
+			}
+			&.subscribe-button {
+				float: left;
+			}
+		}
+	}
+	.nav-close {
+		display: none;
+	}
+}
+
+.nav-closed .nav {
+	transform: translateY(100%);
+}
+.nav-opened .site-wrapper {
+	padding-bottom: 93px;
+}
+
+.menu-button {
+	padding: 0 .6rem;
+	background-color: $grey;
+	color: $orange;
+	border-radius: 5px;
+	padding: 6px 12px;
+	border: 1px solid $orange;
+	float: right;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.tag-cloud {
+	text-align: center;
+	padding: 12px;
+	margin-bottom: 2px;
+	width: 100%;
+	background-color: $grey;
+
+	a {
+		margin-bottom: 4px;
+		text-transform: lowercase;
+		display: inline-block;
+		color: $white;
+		background-color: $orange;
+		padding: 4px 12px 6px 12px;
+	}
+}
+
+.main-header {
+	color: $dark_grey;
+	margin: 0 2rem;
+}
+
+.pagination {
+	display: block;
+	text-align: center;
+	a {
+		color: $orange;
+	}
+}
+
+
+main {
+	max-width: 1000px;
+	margin: auto auto;
+}
+
+article {
+	// background-color: $white;
+	padding: 12px;
+	margin-top: 2rem;
+	padding-bottom: 4rem;
+	color: $dark_grey;
+	&:last-of-type {
+		margin-bottom: 2rem;
+	}
+	border-bottom: 4px solid #ececec;
+	.read-more {
+		color: $orange;
+	}
+}
+
+.post-title {
+	color: $black;
+}
+
+.post-header h2{
+	margin-bottom: 0;
+}
+
+.home-template,
+.post-template,
+.archive-template,
+.author-template,
+.tag-template {
+	.content {
+		h2, h3, h4, h5, h6 { color: $orange; }
+		.post-content a { color: $orange; }
+		figure {
+			display: table;
+			max-width: 100%;
+			margin: 0 auto;
+			padding: 0 4rem;
+
+			img {
+				display: block;
+				margin: 0 auto;
+				max-width: 100%;
+				vertical-align: middle;
+			}
+
+			figcaption {
+				float: left;
+				width: 100%;
+				position: relative;
+				display: block;
+				margin-top: -3rem;
+				height: auto;
+				padding-left: 1rem;
+				line-height: 3rem;
+				background-color: rgba(247, 247, 247, 0.81);
+				color: $black;
+				transition: transform .2s, opacity .2s;
+				transform: translateY(46%);
+				opacity: 0;
+			}
+			&:hover figcaption {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+	}
+	.post-meta {
+		text-align: center;
+		.post-meta-main {
+			margin: 1rem 0;
+			img.author-thumb {
+				margin: 0 auto 1rem auto;
+				display: block;
+			}
+			.author-name, time {
+				display: inline-block;
+			}
+		}
+		.author-thumb {
+			width: 50px;
+			height: auto;
+			border-radius: 100%;
+		}
+		.author-name {
+			font-weight: bold;
+		}
+		.tag-link {
+			text-transform: lowercase;
+		}
+
+		span:last-of-type {
+			display: none;
+		}
+	}
+}
+
+.author-profile {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+	border-bottom: 4px solid #ececec;
+	text-align: center;
+
+	.author-meta span {
+		color: $orange;
+		&:not(:last-child) { margin-right: 2rem; }
+	}
+}
+
+.post-footer {
+	margin-top: 2rem;
+	border-top: 4px solid #ececec;
+	.share, .author { display: inline-block; }
+	.author {
+		width: 80%;
+		.author-link { color: $orange; }
+	}
+	.share {
+		float: right;
+		text-align: right;
+		.fa {
+			font-size: 2em;
+			color: $orange;
+			&:hover {
+				background-color: $white;
+				color: $orange;
+			}
+		}
+	}
+}
+
+.site-footer {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+	section {
+		display: inline;
+		width: 50%;
+		&:first-child {
+			margin-right: 2rem;
+		}
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+a.hvr-fade {
+	display: initial !important;
+	vertical-align: initial !important;
+	color: $orange;
+	&:hover {
+		background-color: inherit;
+		color: $black;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.nav ul li.subscribe-button {
+		float: none;
+	}
+}

@@ -1,0 +1,11 @@
+<div class="extra-pagination inner">
+    <nav class="pagination" role="navigation">
+        {{#if prev}}
+            <a class="newer-posts hvr-fade" href="{{page_url prev}}">&larr; Newer </a>
+        {{/if}}
+        <span class="page-number">Page {{page}} of {{pages}}</span>
+        {{#if next}}
+            <a class="older-posts hvr-fade" href="{{page_url next}}">Older &rarr;</a>
+        {{/if}}
+    </nav>
+</div>

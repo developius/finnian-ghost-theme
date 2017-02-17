@@ -1,0 +1,14 @@
+<div class="nav">
+    <a href="#" class="nav-close"><span class="fa fa-times"></span></a>
+    <ul>
+        {{#foreach navigation}}
+            <li class="hvr-fade nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+        {{#if @labs.subscribers}}
+           <li class="subscribe-button hvr-fade"><a class="subscribe-button" href="{{@blog.url}}/subscribe/">Subscribe <span class="fa fa-rss"></span></a></li>
+        {{else}}
+            <li class="subscribe-button hvr-fade"><a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe <span class="fa fa-rss"></span></a></li>
+        {{/if}}
+    </ul>
+</div>
+<span class="nav-cover"></span>
