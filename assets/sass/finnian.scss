@@ -280,6 +280,12 @@ a.hvr-fade {
 	}
 }
 
+twitterwidget {
+	display: block !important;
+	margin-left: auto;
+  margin-right: auto;
+}
+
 @media only screen and (max-width: 600px) {
 	.nav ul li.subscribe-button {
 		float: none;
