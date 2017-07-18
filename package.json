@@ -2,7 +2,7 @@
     "name": "finnian",
     "description": "Finnian's Ghost theme",
     "demo": "https://finnian.io/blog",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "engines": {
         "ghost": ">=0.9.0 <1.0.0"
     },
