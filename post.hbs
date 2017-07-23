@@ -24,11 +24,9 @@
             <section class="post-meta">
                 <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="Do MMMM YYYY"}}</time>
                  <div class="tag-cloud">
-                    {{#get "tags" limit="20" include="count.posts" order="count.posts desc"}}
-                        {{#foreach tags}}
-                            <a class="hvr-buzz-out" data-count="{{count.posts}}" href="{{@blog.url}}/tag/{{slug}}"{{!--  style="font-size: calc({{count.posts}}% * 15)" --}}>{{name}}</a>
-                        {{/foreach}}
-                    {{/get}}
+                    {{#foreach tags}}
+                        <a class="hvr-buzz-out" href="{{url}}">{{name}}</a>
+                    {{/foreach}}
                 </div>
             </section>
         </header>
@@ -84,6 +82,6 @@
         </footer>
 
     </article>
-</main>                     
+</main>
 
 {{/post}}
