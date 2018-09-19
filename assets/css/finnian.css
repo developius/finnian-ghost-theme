@@ -157,7 +157,8 @@ article {
     display: block;
     margin: 0 auto;
     max-width: 100%;
-    vertical-align: middle; }
+    vertical-align: middle;
+    max-height: 80vh; }
   .home-template .content figure figcaption,
   .post-template .content figure figcaption,
   .archive-template .content figure figcaption,
