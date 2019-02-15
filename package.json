@@ -1,36 +1,39 @@
 {
-    "name": "finnian",
-    "description": "Finnian's Ghost theme",
-    "demo": "https://finnian.io/blog",
-    "version": "1.0.6",
-    "engines": {
-        "ghost": ">=0.9.0 <1.0.0"
-    },
-    "license": "MIT",
-    "screenshots": {
-        "desktop": "assets/screenshot-desktop.jpg",
-        "mobile": "assets/screenshot-mobile.jpg"
-    },
-    "author": {
-        "name": "Finnian Anderson",
-        "email": "get@finnian.io",
-        "url": "https://finnian.io"
-    },
-    "gpm": {
-        "type": "theme",
-        "categories": [
-            "Minimal",
-            "Personal Blogs"
-        ]
-    },
-    "keywords": [
-        "ghost",
-        "theme"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/developius/finnian-ghost-theme.git"
-    },
-    "bugs": "https://github.com/developius/finnian-ghost-theme/issues",
-    "contributors": "https://github.com/developius/finnian-ghost-theme/graphs/contributors"
+  "name": "finnian",
+  "description": "Finnian's Ghost theme",
+  "demo": "https://finnian.io/blog",
+  "version": "1.0.7",
+  "engines": {
+    "ghost": ">=0.9.0 <1.0.0"
+  },
+  "scripts": {
+    "build": "sass assets/sass/finnian.scss --scss -t compressed assets/css/finnian.min.css && sass assets/sass/finnian.scss --scss assets/css/finnian.css"
+  },
+  "license": "MIT",
+  "screenshots": {
+    "desktop": "assets/screenshot-desktop.jpg",
+    "mobile": "assets/screenshot-mobile.jpg"
+  },
+  "author": {
+    "name": "Finnian Anderson",
+    "email": "get@finnian.io",
+    "url": "https://finnian.io"
+  },
+  "gpm": {
+    "type": "theme",
+    "categories": [
+      "Minimal",
+      "Personal Blogs"
+    ]
+  },
+  "keywords": [
+    "ghost",
+    "theme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/developius/finnian-ghost-theme.git"
+  },
+  "bugs": "https://github.com/developius/finnian-ghost-theme/issues",
+  "contributors": "https://github.com/developius/finnian-ghost-theme/graphs/contributors"
 }
