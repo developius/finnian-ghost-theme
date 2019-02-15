@@ -299,7 +299,7 @@ a.hvr-fade {
   button, input {
     border-radius: 5px;
     height: 40px;
-    padding: .2em .4em;
+    padding: 6px 12px;
     font-family: inherit;
     letter-spacing: inherit;
     transition: all 0.2s;
@@ -307,6 +307,9 @@ a.hvr-fade {
   }
 
   button {
+    background-color: $grey;
+    color: $orange;
+    border: 1px solid #ed950f;
     margin-left: 6px;
     &:hover {
       background: $orange;

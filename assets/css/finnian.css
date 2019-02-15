@@ -301,12 +301,15 @@ a.hvr-fade {
 .gh-subscribe button, .gh-subscribe input {
   border-radius: 5px;
   height: 40px;
-  padding: .2em .4em;
+  padding: 6px 12px;
   font-family: inherit;
   letter-spacing: inherit;
   transition: all 0.2s;
   cursor: pointer; }
 .gh-subscribe button {
+  background-color: #f7f7f7;
+  color: #ed950f;
+  border: 1px solid #ed950f;
   margin-left: 6px; }
   .gh-subscribe button:hover {
     background: #ed950f;
