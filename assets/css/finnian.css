@@ -298,7 +298,7 @@ a.hvr-fade {
 .gh-subscribe .form-group {
   display: inline-block;
   float: left; }
-.gh-subscribe .submit, .gh-subscribe input {
+.gh-subscribe button, .gh-subscribe input {
   border-radius: 5px;
   height: 40px;
   padding: .2em .4em;
@@ -306,9 +306,9 @@ a.hvr-fade {
   letter-spacing: inherit;
   transition: all 0.2s;
   cursor: pointer; }
-.gh-subscribe .submit {
+.gh-subscribe button {
   margin-left: 6px; }
-  .gh-subscribe .submit:hover {
+  .gh-subscribe button:hover {
     background: #ed950f;
     color: #fff; }
 

@@ -296,7 +296,7 @@ a.hvr-fade {
     float: left;
   }
 
-  .submit, input {
+  button, input {
     border-radius: 5px;
     height: 40px;
     padding: .2em .4em;
@@ -306,7 +306,7 @@ a.hvr-fade {
     cursor: pointer;
   }
 
-  .submit {
+  button {
     margin-left: 6px;
     &:hover {
       background: $orange;
